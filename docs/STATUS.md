@@ -105,13 +105,9 @@ The TUI now opens to one study screen with the assistant below the flashcard. On
 the assistant asks for sleep/wake and acceptable messaging windows, derives internal delivery
 slots, and keeps those exact slots out of the user-facing conversation. The study card is
 compact and uses a midpoint content-swap flip animation; Space toggles front/back. Verification: 54 tests passed.
-Railway hosting support is prepared with `railway.toml`, a native Python `Procfile`, a
-platform-safe `/healthz` probe, and persistent `/data` volume instructions. No external
-service has been deployed yet. Railway CLI login and Codex-agent integration succeeded;
-project creation is currently blocked because the account's free trial has expired and
-Railway requires a plan selection. A deploy attempt stopped before project creation; the
-existing `HardlyHard` project was not modified. Resume after selecting the approximately
-$5/month Railway Hobby plan and setting its usage controls.
-No money was spent, no real texts or paid API calls were sent, no service was deployed, and
-no package was published. See [SMS setup](sms-setup.md) and [deployment](deployment.md).
+Railway hosting is live at `https://recall-production-0cbc.up.railway.app`. The deployment
+uses an explicit Dockerfile, a generated `RECALL_TOKEN`, disabled live AI/SMS flags, and a
+persistent `/data` volume with `RECALL_DB=/data/recall.db`. The unauthenticated platform
+probe returns `{"status":"ok"}`. No real texts or paid AI calls were sent. See
+[SMS setup](sms-setup.md) and [deployment](deployment.md).
 Physical-terminal animation feel is also available for owner inspection with `recall`.
