@@ -7,7 +7,8 @@ from recall.config import server_url
 
 class Client:
     def __init__(self, transport=None):
-        token = os.getenv("RECALL_TOKEN", "")
+        from recall.config import auth_token
+        token = auth_token()
         self.url = server_url()
         self.http = httpx.AsyncClient(
             base_url=self.url,

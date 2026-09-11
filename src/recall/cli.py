@@ -15,9 +15,25 @@ def hash_password(password: str = typer.Option(..., prompt=True, hide_input=True
 
     typer.echo(make_hash(password))
 
+@app.command()
+def login(url: str = typer.Option("https://recall-production-0cbc.up.railway.app", "--url")):
+    """Log in to a hosted Recall service and save a local session."""
+    import getpass
+    from pathlib import Path
+    email = typer.prompt("Email")
+    password = getpass.getpass("Password: ")
+    response = httpx.post(url.rstrip("/") + "/auth/login", json={"email": email, "password": password}, timeout=30)
+    response.raise_for_status()
+    destination = Path("~/.config/recall/config").expanduser()
+    destination.parent.mkdir(parents=True, mode=0o700, exist_ok=True)
+    destination.write_text(f"RECALL_URL={url.rstrip('/')}\nRECALL_TOKEN={response.json()['access_token']}\n")
+    destination.chmod(0o600)
+    typer.echo("Logged in. Run `recall` to start studying.")
+
 
 def request(method, path, **kwargs):
-    token = os.getenv("RECALL_TOKEN", "")
+    from .config import auth_token
+    token = auth_token()
     headers = {"Authorization": f"Bearer {token}"} if token else {}
     with httpx.Client(base_url=server_url(), headers=headers, timeout=30) as client:
         response = client.request(method, f"/v1/{path}", **kwargs)
