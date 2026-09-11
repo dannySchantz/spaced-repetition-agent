@@ -6,4 +6,4 @@ RUN pip install --no-cache-dir -r requirements.txt
 COPY . .
 
 ENV PYTHONPATH=/app/src
-CMD ["sh", "-c", "python -m recall.cli serve --host 0.0.0.0 --port ${PORT:-8765}"]
+CMD ["sh", "-c", "python -c 'from recall.cli import app; app()' serve --host 0.0.0.0 --port ${PORT:-8765}"]
