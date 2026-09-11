@@ -2,7 +2,7 @@
 builder = "NIXPACKS"
 
 [deploy]
-startCommand = "recall serve --host 0.0.0.0 --port $PORT"
+startCommand = "PYTHONPATH=/app/src python -m recall.cli serve --host 0.0.0.0 --port $PORT"
 healthcheckPath = "/healthz"
 healthcheckTimeout = 30
 restartPolicyType = "ON_FAILURE"
