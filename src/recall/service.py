@@ -2,7 +2,7 @@ import os
 import secrets
 from contextlib import asynccontextmanager
 
-from fastapi import Depends, FastAPI, Header, HTTPException
+from fastapi import Body, Depends, FastAPI, Header, HTTPException, Request
 from fastapi.responses import JSONResponse
 
 from .api import routes
@@ -112,9 +112,16 @@ def create_app(path=None, clock=None, provider=None, worker=False, adapter=None)
     app.state.messaging = messaging
     app.state.assistant = assistant
 
+    @app.post("/auth/login")
+    def login(request: Request, data: dict = Body(...)):
+        from .auth import login as do_login
+        return {"access_token": do_login(request, str(data.get("email", "")), str(data.get("password", "")), str(data.get("website", ""))), "token_type": "bearer", "expires_in": 86400}
+
     def authenticate(authorization: str = Header(default="")):
         token = os.getenv("RECALL_TOKEN", "")
-        if token and not secrets.compare_digest(authorization, f"Bearer {token}"):
+        from .auth import valid_session
+        presented = authorization.removeprefix("Bearer ")
+        if token and not secrets.compare_digest(authorization, f"Bearer {token}") and not valid_session(presented):
             raise HTTPException(401, "Invalid owner token")
 
     @app.get("/v1/health", dependencies=[Depends(authenticate)])

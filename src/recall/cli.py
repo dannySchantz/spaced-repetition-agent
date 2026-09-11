@@ -8,6 +8,14 @@ from .config import database_path, server_url
 app = typer.Typer(invoke_without_command=True)
 
 
+@app.command("hash-password")
+def hash_password(password: str = typer.Option(..., prompt=True, hide_input=True, confirmation_prompt=True)):
+    """Create a scrypt password hash for RECALL_LOGIN_PASSWORD_HASH."""
+    from .auth import hash_password as make_hash
+
+    typer.echo(make_hash(password))
+
+
 def request(method, path, **kwargs):
     token = os.getenv("RECALL_TOKEN", "")
     headers = {"Authorization": f"Bearer {token}"} if token else {}
