@@ -1,0 +1,1589 @@
+{
+  "mode": "fixture_contract_only",
+  "model": "offline-fixtures-v1",
+  "prompt_version": "grader-v1",
+  "dataset_sha256": "c6cc8cd4b27d6e326e374b22cf9a0cbcaa71fef7536382ed5d2fcddee9ba232b",
+  "count": 63,
+  "split": "all",
+  "clear_agreement": 1.0,
+  "false_right_must_fail": [],
+  "numeric_gate": true,
+  "human_reviewed": false,
+  "comparisons": [
+    {
+      "id": "case-001",
+      "split": "development",
+      "expected": {
+        "verdict": "right",
+        "reason": "complete",
+        "close": false,
+        "probe": null,
+        "correction": null
+      },
+      "actual": {
+        "episode_id": "case-001",
+        "verdict": "right",
+        "reason": "complete",
+        "close": false,
+        "probe": null,
+        "correction": null
+      },
+      "agreement": true,
+      "must_fail": false,
+      "usage": {
+        "input_tokens": 0,
+        "output_tokens": 0
+      }
+    },
+    {
+      "id": "case-002",
+      "split": "development",
+      "expected": {
+        "verdict": "right",
+        "reason": "complete",
+        "close": false,
+        "probe": null,
+        "correction": null
+      },
+      "actual": {
+        "episode_id": "case-002",
+        "verdict": "right",
+        "reason": "complete",
+        "close": false,
+        "probe": null,
+        "correction": null
+      },
+      "agreement": true,
+      "must_fail": false,
+      "usage": {
+        "input_tokens": 0,
+        "output_tokens": 0
+      }
+    },
+    {
+      "id": "case-003",
+      "split": "held_out",
+      "expected": {
+        "verdict": "right",
+        "reason": "complete",
+        "close": false,
+        "probe": null,
+        "correction": null
+      },
+      "actual": {
+        "episode_id": "case-003",
+        "verdict": "right",
+        "reason": "complete",
+        "close": false,
+        "probe": null,
+        "correction": null
+      },
+      "agreement": true,
+      "must_fail": false,
+      "usage": {
+        "input_tokens": 0,
+        "output_tokens": 0
+      }
+    },
+    {
+      "id": "case-004",
+      "split": "development",
+      "expected": {
+        "verdict": "right",
+        "reason": "complete",
+        "close": false,
+        "probe": null,
+        "correction": null
+      },
+      "actual": {
+        "episode_id": "case-004",
+        "verdict": "right",
+        "reason": "complete",
+        "close": false,
+        "probe": null,
+        "correction": null
+      },
+      "agreement": true,
+      "must_fail": false,
+      "usage": {
+        "input_tokens": 0,
+        "output_tokens": 0
+      }
+    },
+    {
+      "id": "case-005",
+      "split": "development",
+      "expected": {
+        "verdict": "wrong",
+        "reason": "missing_essential",
+        "close": true,
+        "probe": "What restriction applies to the vector itself?",
+        "correction": "An eigenvector must be nonzero."
+      },
+      "actual": {
+        "episode_id": "case-005",
+        "verdict": "wrong",
+        "reason": "missing_essential",
+        "close": true,
+        "probe": "What restriction applies to the vector itself?",
+        "correction": "An eigenvector must be nonzero."
+      },
+      "agreement": true,
+      "must_fail": false,
+      "usage": {
+        "input_tokens": 0,
+        "output_tokens": 0
+      }
+    },
+    {
+      "id": "case-006",
+      "split": "held_out",
+      "expected": {
+        "verdict": "wrong",
+        "reason": "contradiction",
+        "close": false,
+        "probe": null,
+        "correction": "An eigenvector must be nonzero."
+      },
+      "actual": {
+        "episode_id": "case-006",
+        "verdict": "wrong",
+        "reason": "contradiction",
+        "close": false,
+        "probe": null,
+        "correction": "An eigenvector must be nonzero."
+      },
+      "agreement": true,
+      "must_fail": true,
+      "usage": {
+        "input_tokens": 0,
+        "output_tokens": 0
+      }
+    },
+    {
+      "id": "case-007",
+      "split": "development",
+      "expected": {
+        "verdict": "wrong",
+        "reason": "incorrect",
+        "close": false,
+        "probe": null,
+        "correction": "An eigenvector must be nonzero."
+      },
+      "actual": {
+        "episode_id": "case-007",
+        "verdict": "wrong",
+        "reason": "incorrect",
+        "close": false,
+        "probe": null,
+        "correction": "An eigenvector must be nonzero."
+      },
+      "agreement": true,
+      "must_fail": true,
+      "usage": {
+        "input_tokens": 0,
+        "output_tokens": 0
+      }
+    },
+    {
+      "id": "case-008",
+      "split": "development",
+      "expected": {
+        "verdict": "ungraded",
+        "reason": "unclear_answer",
+        "close": false,
+        "probe": null,
+        "correction": null
+      },
+      "actual": {
+        "episode_id": "case-008",
+        "verdict": "ungraded",
+        "reason": "unclear_answer",
+        "close": false,
+        "probe": null,
+        "correction": null
+      },
+      "agreement": true,
+      "must_fail": false,
+      "usage": {
+        "input_tokens": 0,
+        "output_tokens": 0
+      }
+    },
+    {
+      "id": "case-009",
+      "split": "held_out",
+      "expected": {
+        "verdict": "right",
+        "reason": "complete",
+        "close": false,
+        "probe": null,
+        "correction": null
+      },
+      "actual": {
+        "episode_id": "case-009",
+        "verdict": "right",
+        "reason": "complete",
+        "close": false,
+        "probe": null,
+        "correction": null
+      },
+      "agreement": true,
+      "must_fail": false,
+      "usage": {
+        "input_tokens": 0,
+        "output_tokens": 0
+      }
+    },
+    {
+      "id": "case-010",
+      "split": "development",
+      "expected": {
+        "verdict": "wrong",
+        "reason": "incorrect",
+        "close": false,
+        "probe": null,
+        "correction": "An eigenvector must be nonzero."
+      },
+      "actual": {
+        "episode_id": "case-010",
+        "verdict": "wrong",
+        "reason": "incorrect",
+        "close": false,
+        "probe": null,
+        "correction": "An eigenvector must be nonzero."
+      },
+      "agreement": true,
+      "must_fail": true,
+      "usage": {
+        "input_tokens": 0,
+        "output_tokens": 0
+      }
+    },
+    {
+      "id": "case-011",
+      "split": "development",
+      "expected": {
+        "verdict": "right",
+        "reason": "complete",
+        "close": false,
+        "probe": null,
+        "correction": null
+      },
+      "actual": {
+        "episode_id": "case-011",
+        "verdict": "right",
+        "reason": "complete",
+        "close": false,
+        "probe": null,
+        "correction": null
+      },
+      "agreement": true,
+      "must_fail": false,
+      "usage": {
+        "input_tokens": 0,
+        "output_tokens": 0
+      }
+    },
+    {
+      "id": "case-012",
+      "split": "development",
+      "expected": {
+        "verdict": "right",
+        "reason": "complete",
+        "close": false,
+        "probe": null,
+        "correction": null
+      },
+      "actual": {
+        "episode_id": "case-012",
+        "verdict": "right",
+        "reason": "complete",
+        "close": false,
+        "probe": null,
+        "correction": null
+      },
+      "agreement": true,
+      "must_fail": false,
+      "usage": {
+        "input_tokens": 0,
+        "output_tokens": 0
+      }
+    },
+    {
+      "id": "case-013",
+      "split": "held_out",
+      "expected": {
+        "verdict": "right",
+        "reason": "complete",
+        "close": false,
+        "probe": null,
+        "correction": null
+      },
+      "actual": {
+        "episode_id": "case-013",
+        "verdict": "right",
+        "reason": "complete",
+        "close": false,
+        "probe": null,
+        "correction": null
+      },
+      "agreement": true,
+      "must_fail": false,
+      "usage": {
+        "input_tokens": 0,
+        "output_tokens": 0
+      }
+    },
+    {
+      "id": "case-014",
+      "split": "development",
+      "expected": {
+        "verdict": "right",
+        "reason": "complete",
+        "close": false,
+        "probe": null,
+        "correction": null
+      },
+      "actual": {
+        "episode_id": "case-014",
+        "verdict": "right",
+        "reason": "complete",
+        "close": false,
+        "probe": null,
+        "correction": null
+      },
+      "agreement": true,
+      "must_fail": false,
+      "usage": {
+        "input_tokens": 0,
+        "output_tokens": 0
+      }
+    },
+    {
+      "id": "case-015",
+      "split": "development",
+      "expected": {
+        "verdict": "wrong",
+        "reason": "missing_essential",
+        "close": true,
+        "probe": "What condition must those inputs satisfy?",
+        "correction": "The kernel contains inputs mapped to zero."
+      },
+      "actual": {
+        "episode_id": "case-015",
+        "verdict": "wrong",
+        "reason": "missing_essential",
+        "close": true,
+        "probe": "What condition must those inputs satisfy?",
+        "correction": "The kernel contains inputs mapped to zero."
+      },
+      "agreement": true,
+      "must_fail": false,
+      "usage": {
+        "input_tokens": 0,
+        "output_tokens": 0
+      }
+    },
+    {
+      "id": "case-016",
+      "split": "held_out",
+      "expected": {
+        "verdict": "wrong",
+        "reason": "contradiction",
+        "close": false,
+        "probe": null,
+        "correction": "The kernel contains inputs mapped to zero."
+      },
+      "actual": {
+        "episode_id": "case-016",
+        "verdict": "wrong",
+        "reason": "contradiction",
+        "close": false,
+        "probe": null,
+        "correction": "The kernel contains inputs mapped to zero."
+      },
+      "agreement": true,
+      "must_fail": true,
+      "usage": {
+        "input_tokens": 0,
+        "output_tokens": 0
+      }
+    },
+    {
+      "id": "case-017",
+      "split": "development",
+      "expected": {
+        "verdict": "wrong",
+        "reason": "incorrect",
+        "close": false,
+        "probe": null,
+        "correction": "The kernel contains inputs mapped to zero."
+      },
+      "actual": {
+        "episode_id": "case-017",
+        "verdict": "wrong",
+        "reason": "incorrect",
+        "close": false,
+        "probe": null,
+        "correction": "The kernel contains inputs mapped to zero."
+      },
+      "agreement": true,
+      "must_fail": true,
+      "usage": {
+        "input_tokens": 0,
+        "output_tokens": 0
+      }
+    },
+    {
+      "id": "case-018",
+      "split": "development",
+      "expected": {
+        "verdict": "ungraded",
+        "reason": "unclear_answer",
+        "close": false,
+        "probe": null,
+        "correction": null
+      },
+      "actual": {
+        "episode_id": "case-018",
+        "verdict": "ungraded",
+        "reason": "unclear_answer",
+        "close": false,
+        "probe": null,
+        "correction": null
+      },
+      "agreement": true,
+      "must_fail": false,
+      "usage": {
+        "input_tokens": 0,
+        "output_tokens": 0
+      }
+    },
+    {
+      "id": "case-019",
+      "split": "held_out",
+      "expected": {
+        "verdict": "right",
+        "reason": "complete",
+        "close": false,
+        "probe": null,
+        "correction": null
+      },
+      "actual": {
+        "episode_id": "case-019",
+        "verdict": "right",
+        "reason": "complete",
+        "close": false,
+        "probe": null,
+        "correction": null
+      },
+      "agreement": true,
+      "must_fail": false,
+      "usage": {
+        "input_tokens": 0,
+        "output_tokens": 0
+      }
+    },
+    {
+      "id": "case-020",
+      "split": "development",
+      "expected": {
+        "verdict": "wrong",
+        "reason": "incorrect",
+        "close": false,
+        "probe": null,
+        "correction": "The kernel contains inputs mapped to zero."
+      },
+      "actual": {
+        "episode_id": "case-020",
+        "verdict": "wrong",
+        "reason": "incorrect",
+        "close": false,
+        "probe": null,
+        "correction": "The kernel contains inputs mapped to zero."
+      },
+      "agreement": true,
+      "must_fail": true,
+      "usage": {
+        "input_tokens": 0,
+        "output_tokens": 0
+      }
+    },
+    {
+      "id": "case-021",
+      "split": "development",
+      "expected": {
+        "verdict": "right",
+        "reason": "complete",
+        "close": false,
+        "probe": null,
+        "correction": null
+      },
+      "actual": {
+        "episode_id": "case-021",
+        "verdict": "right",
+        "reason": "complete",
+        "close": false,
+        "probe": null,
+        "correction": null
+      },
+      "agreement": true,
+      "must_fail": false,
+      "usage": {
+        "input_tokens": 0,
+        "output_tokens": 0
+      }
+    },
+    {
+      "id": "case-022",
+      "split": "development",
+      "expected": {
+        "verdict": "right",
+        "reason": "complete",
+        "close": false,
+        "probe": null,
+        "correction": null
+      },
+      "actual": {
+        "episode_id": "case-022",
+        "verdict": "right",
+        "reason": "complete",
+        "close": false,
+        "probe": null,
+        "correction": null
+      },
+      "agreement": true,
+      "must_fail": false,
+      "usage": {
+        "input_tokens": 0,
+        "output_tokens": 0
+      }
+    },
+    {
+      "id": "case-023",
+      "split": "held_out",
+      "expected": {
+        "verdict": "right",
+        "reason": "complete",
+        "close": false,
+        "probe": null,
+        "correction": null
+      },
+      "actual": {
+        "episode_id": "case-023",
+        "verdict": "right",
+        "reason": "complete",
+        "close": false,
+        "probe": null,
+        "correction": null
+      },
+      "agreement": true,
+      "must_fail": false,
+      "usage": {
+        "input_tokens": 0,
+        "output_tokens": 0
+      }
+    },
+    {
+      "id": "case-024",
+      "split": "development",
+      "expected": {
+        "verdict": "right",
+        "reason": "complete",
+        "close": false,
+        "probe": null,
+        "correction": null
+      },
+      "actual": {
+        "episode_id": "case-024",
+        "verdict": "right",
+        "reason": "complete",
+        "close": false,
+        "probe": null,
+        "correction": null
+      },
+      "agreement": true,
+      "must_fail": false,
+      "usage": {
+        "input_tokens": 0,
+        "output_tokens": 0
+      }
+    },
+    {
+      "id": "case-025",
+      "split": "development",
+      "expected": {
+        "verdict": "wrong",
+        "reason": "missing_essential",
+        "close": true,
+        "probe": "What responsibilities does this component have?",
+        "correction": "It manages hardware resources and provides program services."
+      },
+      "actual": {
+        "episode_id": "case-025",
+        "verdict": "wrong",
+        "reason": "missing_essential",
+        "close": true,
+        "probe": "What responsibilities does this component have?",
+        "correction": "It manages hardware resources and provides program services."
+      },
+      "agreement": true,
+      "must_fail": false,
+      "usage": {
+        "input_tokens": 0,
+        "output_tokens": 0
+      }
+    },
+    {
+      "id": "case-026",
+      "split": "held_out",
+      "expected": {
+        "verdict": "wrong",
+        "reason": "contradiction",
+        "close": false,
+        "probe": null,
+        "correction": "It manages hardware resources and provides program services."
+      },
+      "actual": {
+        "episode_id": "case-026",
+        "verdict": "wrong",
+        "reason": "contradiction",
+        "close": false,
+        "probe": null,
+        "correction": "It manages hardware resources and provides program services."
+      },
+      "agreement": true,
+      "must_fail": true,
+      "usage": {
+        "input_tokens": 0,
+        "output_tokens": 0
+      }
+    },
+    {
+      "id": "case-027",
+      "split": "development",
+      "expected": {
+        "verdict": "wrong",
+        "reason": "incorrect",
+        "close": false,
+        "probe": null,
+        "correction": "It manages hardware resources and provides program services."
+      },
+      "actual": {
+        "episode_id": "case-027",
+        "verdict": "wrong",
+        "reason": "incorrect",
+        "close": false,
+        "probe": null,
+        "correction": "It manages hardware resources and provides program services."
+      },
+      "agreement": true,
+      "must_fail": true,
+      "usage": {
+        "input_tokens": 0,
+        "output_tokens": 0
+      }
+    },
+    {
+      "id": "case-028",
+      "split": "development",
+      "expected": {
+        "verdict": "ungraded",
+        "reason": "unclear_answer",
+        "close": false,
+        "probe": null,
+        "correction": null
+      },
+      "actual": {
+        "episode_id": "case-028",
+        "verdict": "ungraded",
+        "reason": "unclear_answer",
+        "close": false,
+        "probe": null,
+        "correction": null
+      },
+      "agreement": true,
+      "must_fail": false,
+      "usage": {
+        "input_tokens": 0,
+        "output_tokens": 0
+      }
+    },
+    {
+      "id": "case-029",
+      "split": "held_out",
+      "expected": {
+        "verdict": "right",
+        "reason": "complete",
+        "close": false,
+        "probe": null,
+        "correction": null
+      },
+      "actual": {
+        "episode_id": "case-029",
+        "verdict": "right",
+        "reason": "complete",
+        "close": false,
+        "probe": null,
+        "correction": null
+      },
+      "agreement": true,
+      "must_fail": false,
+      "usage": {
+        "input_tokens": 0,
+        "output_tokens": 0
+      }
+    },
+    {
+      "id": "case-030",
+      "split": "development",
+      "expected": {
+        "verdict": "wrong",
+        "reason": "incorrect",
+        "close": false,
+        "probe": null,
+        "correction": "It manages hardware resources and provides program services."
+      },
+      "actual": {
+        "episode_id": "case-030",
+        "verdict": "wrong",
+        "reason": "incorrect",
+        "close": false,
+        "probe": null,
+        "correction": "It manages hardware resources and provides program services."
+      },
+      "agreement": true,
+      "must_fail": true,
+      "usage": {
+        "input_tokens": 0,
+        "output_tokens": 0
+      }
+    },
+    {
+      "id": "case-031",
+      "split": "development",
+      "expected": {
+        "verdict": "right",
+        "reason": "complete",
+        "close": false,
+        "probe": null,
+        "correction": null
+      },
+      "actual": {
+        "episode_id": "case-031",
+        "verdict": "right",
+        "reason": "complete",
+        "close": false,
+        "probe": null,
+        "correction": null
+      },
+      "agreement": true,
+      "must_fail": false,
+      "usage": {
+        "input_tokens": 0,
+        "output_tokens": 0
+      }
+    },
+    {
+      "id": "case-032",
+      "split": "development",
+      "expected": {
+        "verdict": "right",
+        "reason": "complete",
+        "close": false,
+        "probe": null,
+        "correction": null
+      },
+      "actual": {
+        "episode_id": "case-032",
+        "verdict": "right",
+        "reason": "complete",
+        "close": false,
+        "probe": null,
+        "correction": null
+      },
+      "agreement": true,
+      "must_fail": false,
+      "usage": {
+        "input_tokens": 0,
+        "output_tokens": 0
+      }
+    },
+    {
+      "id": "case-033",
+      "split": "held_out",
+      "expected": {
+        "verdict": "right",
+        "reason": "complete",
+        "close": false,
+        "probe": null,
+        "correction": null
+      },
+      "actual": {
+        "episode_id": "case-033",
+        "verdict": "right",
+        "reason": "complete",
+        "close": false,
+        "probe": null,
+        "correction": null
+      },
+      "agreement": true,
+      "must_fail": false,
+      "usage": {
+        "input_tokens": 0,
+        "output_tokens": 0
+      }
+    },
+    {
+      "id": "case-034",
+      "split": "development",
+      "expected": {
+        "verdict": "right",
+        "reason": "complete",
+        "close": false,
+        "probe": null,
+        "correction": null
+      },
+      "actual": {
+        "episode_id": "case-034",
+        "verdict": "right",
+        "reason": "complete",
+        "close": false,
+        "probe": null,
+        "correction": null
+      },
+      "agreement": true,
+      "must_fail": false,
+      "usage": {
+        "input_tokens": 0,
+        "output_tokens": 0
+      }
+    },
+    {
+      "id": "case-035",
+      "split": "development",
+      "expected": {
+        "verdict": "wrong",
+        "reason": "missing_essential",
+        "close": true,
+        "probe": "What determines the direction of net movement?",
+        "correction": "Net water movement is toward higher solute concentration."
+      },
+      "actual": {
+        "episode_id": "case-035",
+        "verdict": "wrong",
+        "reason": "missing_essential",
+        "close": true,
+        "probe": "What determines the direction of net movement?",
+        "correction": "Net water movement is toward higher solute concentration."
+      },
+      "agreement": true,
+      "must_fail": false,
+      "usage": {
+        "input_tokens": 0,
+        "output_tokens": 0
+      }
+    },
+    {
+      "id": "case-036",
+      "split": "held_out",
+      "expected": {
+        "verdict": "wrong",
+        "reason": "contradiction",
+        "close": false,
+        "probe": null,
+        "correction": "Net water movement is toward higher solute concentration."
+      },
+      "actual": {
+        "episode_id": "case-036",
+        "verdict": "wrong",
+        "reason": "contradiction",
+        "close": false,
+        "probe": null,
+        "correction": "Net water movement is toward higher solute concentration."
+      },
+      "agreement": true,
+      "must_fail": true,
+      "usage": {
+        "input_tokens": 0,
+        "output_tokens": 0
+      }
+    },
+    {
+      "id": "case-037",
+      "split": "development",
+      "expected": {
+        "verdict": "wrong",
+        "reason": "incorrect",
+        "close": false,
+        "probe": null,
+        "correction": "Net water movement is toward higher solute concentration."
+      },
+      "actual": {
+        "episode_id": "case-037",
+        "verdict": "wrong",
+        "reason": "incorrect",
+        "close": false,
+        "probe": null,
+        "correction": "Net water movement is toward higher solute concentration."
+      },
+      "agreement": true,
+      "must_fail": true,
+      "usage": {
+        "input_tokens": 0,
+        "output_tokens": 0
+      }
+    },
+    {
+      "id": "case-038",
+      "split": "development",
+      "expected": {
+        "verdict": "ungraded",
+        "reason": "unclear_answer",
+        "close": false,
+        "probe": null,
+        "correction": null
+      },
+      "actual": {
+        "episode_id": "case-038",
+        "verdict": "ungraded",
+        "reason": "unclear_answer",
+        "close": false,
+        "probe": null,
+        "correction": null
+      },
+      "agreement": true,
+      "must_fail": false,
+      "usage": {
+        "input_tokens": 0,
+        "output_tokens": 0
+      }
+    },
+    {
+      "id": "case-039",
+      "split": "held_out",
+      "expected": {
+        "verdict": "right",
+        "reason": "complete",
+        "close": false,
+        "probe": null,
+        "correction": null
+      },
+      "actual": {
+        "episode_id": "case-039",
+        "verdict": "right",
+        "reason": "complete",
+        "close": false,
+        "probe": null,
+        "correction": null
+      },
+      "agreement": true,
+      "must_fail": false,
+      "usage": {
+        "input_tokens": 0,
+        "output_tokens": 0
+      }
+    },
+    {
+      "id": "case-040",
+      "split": "development",
+      "expected": {
+        "verdict": "wrong",
+        "reason": "incorrect",
+        "close": false,
+        "probe": null,
+        "correction": "Net water movement is toward higher solute concentration."
+      },
+      "actual": {
+        "episode_id": "case-040",
+        "verdict": "wrong",
+        "reason": "incorrect",
+        "close": false,
+        "probe": null,
+        "correction": "Net water movement is toward higher solute concentration."
+      },
+      "agreement": true,
+      "must_fail": true,
+      "usage": {
+        "input_tokens": 0,
+        "output_tokens": 0
+      }
+    },
+    {
+      "id": "case-041",
+      "split": "development",
+      "expected": {
+        "verdict": "right",
+        "reason": "complete",
+        "close": false,
+        "probe": null,
+        "correction": null
+      },
+      "actual": {
+        "episode_id": "case-041",
+        "verdict": "right",
+        "reason": "complete",
+        "close": false,
+        "probe": null,
+        "correction": null
+      },
+      "agreement": true,
+      "must_fail": false,
+      "usage": {
+        "input_tokens": 0,
+        "output_tokens": 0
+      }
+    },
+    {
+      "id": "case-042",
+      "split": "development",
+      "expected": {
+        "verdict": "right",
+        "reason": "complete",
+        "close": false,
+        "probe": null,
+        "correction": null
+      },
+      "actual": {
+        "episode_id": "case-042",
+        "verdict": "right",
+        "reason": "complete",
+        "close": false,
+        "probe": null,
+        "correction": null
+      },
+      "agreement": true,
+      "must_fail": false,
+      "usage": {
+        "input_tokens": 0,
+        "output_tokens": 0
+      }
+    },
+    {
+      "id": "case-043",
+      "split": "held_out",
+      "expected": {
+        "verdict": "right",
+        "reason": "complete",
+        "close": false,
+        "probe": null,
+        "correction": null
+      },
+      "actual": {
+        "episode_id": "case-043",
+        "verdict": "right",
+        "reason": "complete",
+        "close": false,
+        "probe": null,
+        "correction": null
+      },
+      "agreement": true,
+      "must_fail": false,
+      "usage": {
+        "input_tokens": 0,
+        "output_tokens": 0
+      }
+    },
+    {
+      "id": "case-044",
+      "split": "development",
+      "expected": {
+        "verdict": "right",
+        "reason": "complete",
+        "close": false,
+        "probe": null,
+        "correction": null
+      },
+      "actual": {
+        "episode_id": "case-044",
+        "verdict": "right",
+        "reason": "complete",
+        "close": false,
+        "probe": null,
+        "correction": null
+      },
+      "agreement": true,
+      "must_fail": false,
+      "usage": {
+        "input_tokens": 0,
+        "output_tokens": 0
+      }
+    },
+    {
+      "id": "case-045",
+      "split": "development",
+      "expected": {
+        "verdict": "wrong",
+        "reason": "missing_essential",
+        "close": true,
+        "probe": "Which alternative determines this value?",
+        "correction": "Use the value of the best forgone alternative."
+      },
+      "actual": {
+        "episode_id": "case-045",
+        "verdict": "wrong",
+        "reason": "missing_essential",
+        "close": true,
+        "probe": "Which alternative determines this value?",
+        "correction": "Use the value of the best forgone alternative."
+      },
+      "agreement": true,
+      "must_fail": false,
+      "usage": {
+        "input_tokens": 0,
+        "output_tokens": 0
+      }
+    },
+    {
+      "id": "case-046",
+      "split": "held_out",
+      "expected": {
+        "verdict": "wrong",
+        "reason": "contradiction",
+        "close": false,
+        "probe": null,
+        "correction": "Use the value of the best forgone alternative."
+      },
+      "actual": {
+        "episode_id": "case-046",
+        "verdict": "wrong",
+        "reason": "contradiction",
+        "close": false,
+        "probe": null,
+        "correction": "Use the value of the best forgone alternative."
+      },
+      "agreement": true,
+      "must_fail": true,
+      "usage": {
+        "input_tokens": 0,
+        "output_tokens": 0
+      }
+    },
+    {
+      "id": "case-047",
+      "split": "development",
+      "expected": {
+        "verdict": "wrong",
+        "reason": "incorrect",
+        "close": false,
+        "probe": null,
+        "correction": "Use the value of the best forgone alternative."
+      },
+      "actual": {
+        "episode_id": "case-047",
+        "verdict": "wrong",
+        "reason": "incorrect",
+        "close": false,
+        "probe": null,
+        "correction": "Use the value of the best forgone alternative."
+      },
+      "agreement": true,
+      "must_fail": true,
+      "usage": {
+        "input_tokens": 0,
+        "output_tokens": 0
+      }
+    },
+    {
+      "id": "case-048",
+      "split": "development",
+      "expected": {
+        "verdict": "ungraded",
+        "reason": "unclear_answer",
+        "close": false,
+        "probe": null,
+        "correction": null
+      },
+      "actual": {
+        "episode_id": "case-048",
+        "verdict": "ungraded",
+        "reason": "unclear_answer",
+        "close": false,
+        "probe": null,
+        "correction": null
+      },
+      "agreement": true,
+      "must_fail": false,
+      "usage": {
+        "input_tokens": 0,
+        "output_tokens": 0
+      }
+    },
+    {
+      "id": "case-049",
+      "split": "held_out",
+      "expected": {
+        "verdict": "right",
+        "reason": "complete",
+        "close": false,
+        "probe": null,
+        "correction": null
+      },
+      "actual": {
+        "episode_id": "case-049",
+        "verdict": "right",
+        "reason": "complete",
+        "close": false,
+        "probe": null,
+        "correction": null
+      },
+      "agreement": true,
+      "must_fail": false,
+      "usage": {
+        "input_tokens": 0,
+        "output_tokens": 0
+      }
+    },
+    {
+      "id": "case-050",
+      "split": "development",
+      "expected": {
+        "verdict": "wrong",
+        "reason": "incorrect",
+        "close": false,
+        "probe": null,
+        "correction": "Use the value of the best forgone alternative."
+      },
+      "actual": {
+        "episode_id": "case-050",
+        "verdict": "wrong",
+        "reason": "incorrect",
+        "close": false,
+        "probe": null,
+        "correction": "Use the value of the best forgone alternative."
+      },
+      "agreement": true,
+      "must_fail": true,
+      "usage": {
+        "input_tokens": 0,
+        "output_tokens": 0
+      }
+    },
+    {
+      "id": "case-051",
+      "split": "development",
+      "expected": {
+        "verdict": "right",
+        "reason": "complete",
+        "close": false,
+        "probe": null,
+        "correction": null
+      },
+      "actual": {
+        "episode_id": "case-051",
+        "verdict": "right",
+        "reason": "complete",
+        "close": false,
+        "probe": null,
+        "correction": null
+      },
+      "agreement": true,
+      "must_fail": false,
+      "usage": {
+        "input_tokens": 0,
+        "output_tokens": 0
+      }
+    },
+    {
+      "id": "case-052",
+      "split": "development",
+      "expected": {
+        "verdict": "right",
+        "reason": "complete",
+        "close": false,
+        "probe": null,
+        "correction": null
+      },
+      "actual": {
+        "episode_id": "case-052",
+        "verdict": "right",
+        "reason": "complete",
+        "close": false,
+        "probe": null,
+        "correction": null
+      },
+      "agreement": true,
+      "must_fail": false,
+      "usage": {
+        "input_tokens": 0,
+        "output_tokens": 0
+      }
+    },
+    {
+      "id": "case-053",
+      "split": "held_out",
+      "expected": {
+        "verdict": "right",
+        "reason": "complete",
+        "close": false,
+        "probe": null,
+        "correction": null
+      },
+      "actual": {
+        "episode_id": "case-053",
+        "verdict": "right",
+        "reason": "complete",
+        "close": false,
+        "probe": null,
+        "correction": null
+      },
+      "agreement": true,
+      "must_fail": false,
+      "usage": {
+        "input_tokens": 0,
+        "output_tokens": 0
+      }
+    },
+    {
+      "id": "case-054",
+      "split": "development",
+      "expected": {
+        "verdict": "right",
+        "reason": "complete",
+        "close": false,
+        "probe": null,
+        "correction": null
+      },
+      "actual": {
+        "episode_id": "case-054",
+        "verdict": "right",
+        "reason": "complete",
+        "close": false,
+        "probe": null,
+        "correction": null
+      },
+      "agreement": true,
+      "must_fail": false,
+      "usage": {
+        "input_tokens": 0,
+        "output_tokens": 0
+      }
+    },
+    {
+      "id": "case-055",
+      "split": "development",
+      "expected": {
+        "verdict": "wrong",
+        "reason": "missing_essential",
+        "close": true,
+        "probe": "How does repeating it affect the result?",
+        "correction": "Repetition has the same effect as a single application."
+      },
+      "actual": {
+        "episode_id": "case-055",
+        "verdict": "wrong",
+        "reason": "missing_essential",
+        "close": true,
+        "probe": "How does repeating it affect the result?",
+        "correction": "Repetition has the same effect as a single application."
+      },
+      "agreement": true,
+      "must_fail": false,
+      "usage": {
+        "input_tokens": 0,
+        "output_tokens": 0
+      }
+    },
+    {
+      "id": "case-056",
+      "split": "held_out",
+      "expected": {
+        "verdict": "wrong",
+        "reason": "contradiction",
+        "close": false,
+        "probe": null,
+        "correction": "Repetition has the same effect as a single application."
+      },
+      "actual": {
+        "episode_id": "case-056",
+        "verdict": "wrong",
+        "reason": "contradiction",
+        "close": false,
+        "probe": null,
+        "correction": "Repetition has the same effect as a single application."
+      },
+      "agreement": true,
+      "must_fail": true,
+      "usage": {
+        "input_tokens": 0,
+        "output_tokens": 0
+      }
+    },
+    {
+      "id": "case-057",
+      "split": "development",
+      "expected": {
+        "verdict": "wrong",
+        "reason": "incorrect",
+        "close": false,
+        "probe": null,
+        "correction": "Repetition has the same effect as a single application."
+      },
+      "actual": {
+        "episode_id": "case-057",
+        "verdict": "wrong",
+        "reason": "incorrect",
+        "close": false,
+        "probe": null,
+        "correction": "Repetition has the same effect as a single application."
+      },
+      "agreement": true,
+      "must_fail": true,
+      "usage": {
+        "input_tokens": 0,
+        "output_tokens": 0
+      }
+    },
+    {
+      "id": "case-058",
+      "split": "development",
+      "expected": {
+        "verdict": "ungraded",
+        "reason": "unclear_answer",
+        "close": false,
+        "probe": null,
+        "correction": null
+      },
+      "actual": {
+        "episode_id": "case-058",
+        "verdict": "ungraded",
+        "reason": "unclear_answer",
+        "close": false,
+        "probe": null,
+        "correction": null
+      },
+      "agreement": true,
+      "must_fail": false,
+      "usage": {
+        "input_tokens": 0,
+        "output_tokens": 0
+      }
+    },
+    {
+      "id": "case-059",
+      "split": "held_out",
+      "expected": {
+        "verdict": "right",
+        "reason": "complete",
+        "close": false,
+        "probe": null,
+        "correction": null
+      },
+      "actual": {
+        "episode_id": "case-059",
+        "verdict": "right",
+        "reason": "complete",
+        "close": false,
+        "probe": null,
+        "correction": null
+      },
+      "agreement": true,
+      "must_fail": false,
+      "usage": {
+        "input_tokens": 0,
+        "output_tokens": 0
+      }
+    },
+    {
+      "id": "case-060",
+      "split": "development",
+      "expected": {
+        "verdict": "wrong",
+        "reason": "incorrect",
+        "close": false,
+        "probe": null,
+        "correction": "Repetition has the same effect as a single application."
+      },
+      "actual": {
+        "episode_id": "case-060",
+        "verdict": "wrong",
+        "reason": "incorrect",
+        "close": false,
+        "probe": null,
+        "correction": "Repetition has the same effect as a single application."
+      },
+      "agreement": true,
+      "must_fail": true,
+      "usage": {
+        "input_tokens": 0,
+        "output_tokens": 0
+      }
+    },
+    {
+      "id": "case-061",
+      "split": "held_out",
+      "expected": {
+        "verdict": "ungraded",
+        "reason": "ambiguous_reference",
+        "close": false,
+        "probe": null,
+        "correction": "Reference needs explicit context."
+      },
+      "actual": {
+        "episode_id": "case-061",
+        "verdict": "ungraded",
+        "reason": "ambiguous_reference",
+        "close": false,
+        "probe": null,
+        "correction": "Reference needs explicit context."
+      },
+      "agreement": true,
+      "must_fail": false,
+      "usage": {
+        "input_tokens": 0,
+        "output_tokens": 0
+      }
+    },
+    {
+      "id": "case-062",
+      "split": "held_out",
+      "expected": {
+        "verdict": "ungraded",
+        "reason": "ambiguous_reference",
+        "close": false,
+        "probe": null,
+        "correction": "Reference needs explicit context."
+      },
+      "actual": {
+        "episode_id": "case-062",
+        "verdict": "ungraded",
+        "reason": "ambiguous_reference",
+        "close": false,
+        "probe": null,
+        "correction": "Reference needs explicit context."
+      },
+      "agreement": true,
+      "must_fail": false,
+      "usage": {
+        "input_tokens": 0,
+        "output_tokens": 0
+      }
+    },
+    {
+      "id": "case-063",
+      "split": "held_out",
+      "expected": {
+        "verdict": "ungraded",
+        "reason": "ambiguous_reference",
+        "close": false,
+        "probe": null,
+        "correction": "Reference needs explicit context."
+      },
+      "actual": {
+        "episode_id": "case-063",
+        "verdict": "ungraded",
+        "reason": "ambiguous_reference",
+        "close": false,
+        "probe": null,
+        "correction": "Reference needs explicit context."
+      },
+      "agreement": true,
+      "must_fail": false,
+      "usage": {
+        "input_tokens": 0,
+        "output_tokens": 0
+      }
+    }
+  ]
+}

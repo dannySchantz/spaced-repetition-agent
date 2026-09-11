@@ -1,0 +1,41 @@
+services:
+  recall:
+    build:
+      context: ..
+      dockerfile: deploy/Dockerfile
+    restart: unless-stopped
+    init: true
+    stop_grace_period: 60s
+    env_file: .env
+    environment:
+      RECALL_DB: /data/recall.db
+    volumes:
+      - recall_data:/data
+    expose:
+      - "8765"
+    healthcheck:
+      test: ["CMD", "recall", "doctor"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+    deploy:
+      replicas: 1
+  caddy:
+    image: caddy:2.10.2-alpine@sha256:4c6e91c6ed0e2fa03efd5b44747b625fec79bc9cd06ac5235a779726618e530d
+    restart: unless-stopped
+    environment:
+      RECALL_DOMAIN: ${RECALL_DOMAIN:?Set RECALL_DOMAIN}
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./Caddyfile:/etc/caddy/Caddyfile:ro
+      - caddy_data:/data
+      - caddy_config:/config
+    depends_on:
+      recall:
+        condition: service_healthy
+volumes:
+  recall_data:
+  caddy_data:
+  caddy_config:

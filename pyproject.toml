@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools==84.0.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "recall-local"
+version = "0.1.0"
+description = "Local-first terminal and simulated SMS spaced repetition"
+requires-python = ">=3.12,<3.14"
+dependencies = ["greenlet", "fastapi", "uvicorn", "httpx", "typer", "sqlalchemy>=2", "alembic", "fsrs", "textual", "pydantic", "openai", "twilio", "python-multipart"]
+
+[project.optional-dependencies]
+dev = ["pytest", "pytest-asyncio", "ruff"]
+
+[project.scripts]
+recall = "recall.cli:app"
+
+[tool.setuptools.package-data]
+recall = ["storage/versions/*.py", "ai/*.jsonl"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 100
+
+[tool.ruff.lint]
+select = ["E4", "E7", "E9", "F", "I", "B"]
+ignore = ["B008"]
