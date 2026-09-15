@@ -1,4 +1,4 @@
-# Recall — Spaced Repetition Agent
+# Recall: Spaced Repetition Agent
 
 An animated terminal flashcard app and two-way SMS simulator sharing durable FSRS
 review history. Python 3.12, Textual, FastAPI, SQLite and a single service process.
